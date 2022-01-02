@@ -6,9 +6,10 @@ export default function Header() {
         </div>
         <div className="flex-1 px-2 mx-2">
           <div className="items-stretch hidden lg:flex">
-            <a className="btn btn-ghost btn-sm rounded-btn">Portfolio</a>
+            <a href='https://meanii.codes' className="btn btn-ghost btn-sm rounded-btn">Portfolio</a>
+            <a href='https://blog.meanii.codes' className="btn btn-ghost btn-sm rounded-btn">Blogs</a>
             <a className="btn btn-ghost btn-sm rounded-btn">About</a>
-            <a className="btn btn-ghost btn-sm rounded-btn">Github</a>
+            <a href='https://github.com/meanii/gradientify' className="btn btn-ghost btn-sm rounded-btn">Github</a>
           </div>
         </div>
       </div>
