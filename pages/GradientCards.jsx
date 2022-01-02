@@ -1,6 +1,6 @@
 
 import GradientCard from "./GradientCard";
-import { gradientArray } from "./gradientColors"
+import { gradientArray } from "../lib/gradientColors"
 
 export default function GradientCards() {
 
