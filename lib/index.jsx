@@ -9,6 +9,7 @@ const isNotAllowed = (color) => {
     "white",
     "rose",
     "lime",
+    "inherit",
     "violet",
     "emerald",
     "fuchsia",
@@ -33,8 +34,24 @@ export const getRandomColor = (prevColor = "") => {
 export const getGradient = (
   firstColor,
   secondColor,
-  intensity = 300,
-  direction = "br"
+  intensity = 500,
+  direction = "r"
 ) => {
   return `bg-gradient-to-${direction} from-${firstColor}-${intensity} to-${secondColor}-${intensity}`;
+};
+
+export const getRandomGradient = () => {
+  const firstColor = getRandomColor();
+  const secondColor = getRandomColor(firstColor);
+  const gradient = getGradient(firstColor, secondColor);
+  return gradient;
+};
+
+export const getGradientArray = (length) => {
+  var gradients = [];
+  for (let i = 0; i < length; i++) {
+    const gradient = getRandomGradient();
+    gradients.push(gradient);
+  }
+  return gradients;
 };

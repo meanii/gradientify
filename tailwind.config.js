@@ -14,8 +14,8 @@ module.exports = {
     styled: true,
     themes: [
       'synthwave',
-      'forest',
       'emerald',
+      'forest',
       'dark',
     ],
     base: true,
